@@ -106,7 +106,6 @@ export class GitWidget extends Widget {
       this.component = ReactDOM.render(element, this.node);
 
       this._settings.changed.connect(this.component.refresh, this);
-      this.component.refresh();
     });
   }
 
